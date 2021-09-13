@@ -15,11 +15,11 @@ public class DepartmentDao {
 
     static {
         departments = new HashMap<>();
-        departments.put(101, new Department(101, "Study"));
-        departments.put(102, new Department(101, "Marketing"));
-        departments.put(103, new Department(101, "Research"));
-        departments.put(104, new Department(101, "Operation"));
-        departments.put(105, new Department(101, "Logistics"));
+        departments.put(101, new Department(101, "Teaching"));
+        departments.put(102, new Department(102, "Marketing"));
+        departments.put(103, new Department(103, "Research"));
+        departments.put(104, new Department(104, "Operation"));
+        departments.put(105, new Department(105, "Logistics"));
     }
 
     public Collection<Department> getAllDepartments() {
