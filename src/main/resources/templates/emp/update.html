@@ -38,7 +38,7 @@
 <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
   <form th:action="@{/updateEmp}" method="post">
     <input type="hidden" name="id" th:value="${emp.getId()}">
-    <div class="form-group">
+    <div class="form-group mt-3">
       <label >LastName</label>
       <input type="text" class="form-control" name="lastName" th:value="${emp.getLastName()}" >
     </div>
@@ -62,9 +62,9 @@
 
     <div class="form-group">
       <label>department</label>
-      <select class="form-control" name="department">
+      <select class="form-control" name="department.id">
 
-        <option th:each="dept:${departments}" th:selected="${dept.getDepartmentid()==emp.getDepartment()}"  th:text="${dept.getDepartmentName()}" th:value="${dept.getDepartmentid()}"></option>
+        <option th:selected="${dept.getId()==emp.getDepartment().getId()}" th:each="dept:${departments}" th:text="${dept.getDepartmentName()}" th:value="${dept.getId()}"></option>
       </select>
     </div>
 

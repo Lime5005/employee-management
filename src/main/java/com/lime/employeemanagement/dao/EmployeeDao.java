@@ -18,11 +18,11 @@ public class EmployeeDao {
 
     static {
         employees = new HashMap<>();
-        employees.put(101, new Employee(1001, "AA", "aa@gmail.com", 1, new Department(101, "Study")));
-        employees.put(102, new Employee(1002, "BB", "bb@gmail.com", 0, new Department(102, "Marketing")));
-        employees.put(103, new Employee(1003, "CC", "cc@gmail.com", 1, new Department(103, "Research")));
-        employees.put(104, new Employee(1004, "DD", "dd@gmail.com", 0, new Department(104, "Operation")));
-        employees.put(105, new Employee(1005, "EE", "ee@gmail.com", 1, new Department(105, "Logistics")));
+        employees.put(1001, new Employee(1001, "AA", "aa@gmail.com", 1, new Department(101, "Study")));
+        employees.put(1002, new Employee(1002, "BB", "bb@gmail.com", 0, new Department(102, "Marketing")));
+        employees.put(1003, new Employee(1003, "CC", "cc@gmail.com", 1, new Department(103, "Research")));
+        employees.put(1004, new Employee(1004, "DD", "dd@gmail.com", 0, new Department(104, "Operation")));
+        employees.put(1005, new Employee(1005, "EE", "ee@gmail.com", 1, new Department(105, "Logistics")));
     }
 
     // Create/Update:
