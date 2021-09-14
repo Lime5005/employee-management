@@ -69,7 +69,7 @@
     </div>
 
     <div class="form-group">
-      <label>Birth(format: yyyy/MM/dd)</label>
+      <label>Birth(Format: yyyy-MM-dd)</label>
       <input type="text" name="birth" class="form-control" th:value="${#dates.format(emp.getBirth(),'yyyy-MM-dd hh:mm')}">
     </div>
     <button type="submit" class="btn btn-primary">修改</button>
